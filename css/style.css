@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+:root {
+    --color0: #202122;
+    --color1: #26303B;
+    --color2: #465A6E;
+    --color3: #83888e;
+    --color4: #AFB5BA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color4);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color0), var(--color2));
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-shadow: 2px 2px 2px var(--color0);
+}
+
+p {
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+section {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+div:hover {
+    background-color: var(--color3);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+div.recomended:hover{
+    border: 2px solid green;
+}
+
+div.developing:hover{
+    border: 2px solid red;
+}
+
+p.blocked {
+    color: red;
+}
+
+p.unlocked {
+    color: green;
+}
+
+table {
+    display: inline-block;
+    margin: center;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th, td {
+    border: 1px solid black;
+    table-layout: inherit;
+    padding: 5px;
+}
+
+footer {
+    padding-top: 35px;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (min-width: 500px) and (max-width: 719px){
+    main {
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        display: block;
+        text-align: center;
+    }
+
+    div {
+        display: inline-block;
+        width: 170px;
+    }
+}
