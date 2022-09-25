@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+:root {
+    --color0: #202122;
+    --color1: #26303B;
+    --color2: #465A6E;
+    --color3: #83888e;
+    --color4: #AFB5BA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color4);
+}
+
+header {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+p{
+    padding: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
+.letter {
+    display: inline-block;
+    width: 7%;
+    height: 55px;
+    background-color: var(--color2);
+    text-align: center;
+}
+
+#check-word{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+footer {
+    margin-bottom: 5%;
+    padding-top: 35px;
+    text-align: center;
+    font-style: italic;
+}
