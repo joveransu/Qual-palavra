@@ -6,7 +6,11 @@ function selectWord() {
 }
 
 function nextBox(elemento){
-    console.log(elemento.id)
+    elemento.value.toUpperCase()
+    var id = elemento.id
+    var newFocus = 'letter' + Number(elemento.id) + 1
+    document.getElementById(newFocus).focus()
+    console.log('Sei lá: ' + elemento.value + ', ' + elemento.id)
 }
 
 function selectedBox(elemento){
