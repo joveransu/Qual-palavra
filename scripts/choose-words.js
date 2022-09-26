@@ -137,6 +137,29 @@ function nextBox(elemento){
     } 
 }
 
+function organizeWordsLetter(id_list, tiped_word){
+    var list_id = window.document.getElementById(id_list)
+    list_id.innerHTML = `${tiped_word}`
+
+    //Detectar letras que foram usadas.
+    
+    /*var all_letters = window.document.getElementsByClassName('alfabeto')
+    for(letter_ of all_letters){ //Loop no alfabeto
+
+        for(my_letters of main_word){ //Loop nas letras da minha palavra
+
+            if(letter_.textContent == my_letters){
+                console.log('Nice')
+                //element.classList.add("my-class")
+            } else if (letter_.textContent == my_letters) {
+
+            } else {
+                letter_.classList.add('erro-letter')
+            }
+        }
+    }*/
+}
+
 function verifyWord(){
     var box1 = window.document.getElementById('letter1').value
     if (box1.length == 0 || box1 == ' '){
@@ -180,8 +203,7 @@ function verifyWord(){
     if (main_word != my_word){
         //Perder uma chance.
         if (tentativas >= 5){
-            var list_id = window.document.getElementById('word5')
-            list_id.innerHTML = `${my_word}`
+            organizeWordsLetter('word5', my_word)
             alert(`VOCÊ PERDEU! A palavra correta era ${main_word}.`)
             document.location.href = '../index.html' //Jogar para página principal
         } else {
@@ -189,25 +211,18 @@ function verifyWord(){
             //Colocar palavra com cores na lista.
             switch(tentativas){
                 case 2:
-                    var list_id = window.document.getElementById('word1')
-                    list_id.innerHTML = `${my_word}`
+                    organizeWordsLetter('word1', my_word)
                     break
                 case 3:
-                    var list_id = window.document.getElementById('word2')
-                    list_id.innerHTML = `${my_word}`
+                    organizeWordsLetter('word2', my_word)
                     break
                 case 4:
-                    var list_id = window.document.getElementById('word3')
-                    list_id.innerHTML = `${my_word}`
+                    organizeWordsLetter('word3', my_word)
                     break
                 case 5:
-                    var list_id = window.document.getElementById('word4')
-                    list_id.innerHTML = `${my_word}`
+                    organizeWordsLetter('word4', my_word)
                     break
             }
-    
-            
-            //Detectar letras que foram usadas.
         }
     } else {
         alert('PARABÉNS: Você ganhou.')

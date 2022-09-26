@@ -73,12 +73,31 @@ div{
     padding-top: 25px;
 }
 
-span {
+.alfabeto {
     border: 1px solid black;
     padding: 2px;
     margin: 5px;
     line-height: 2em;
     font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+span.correct-letter{
+    background-color: rgb(2, 248, 2);
+}
+
+span.have-letter{
+    background-color: yellow;
+}
+
+span.erro-letter{
+    background-color: red;
 }
 
 footer {
@@ -92,6 +111,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 
 @media screen and (min-width: 500px) {
     #all-letters{
