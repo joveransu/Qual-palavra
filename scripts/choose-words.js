@@ -166,21 +166,49 @@ function organizeWordsLetter(id_list, tiped_word){
 
     //Detectar letras que foram usadas.
     
-    /*var all_letters = window.document.getElementsByClassName('alfabeto')
-    for(letter_ of all_letters){ //Loop no alfabeto
+    var all_letters = window.document.getElementsByClassName('alfabeto')
 
-        for(my_letters of main_word){ //Loop nas letras da minha palavra
-
-            if(letter_.textContent == my_letters){
-                console.log('Nice')
-                //element.classList.add("my-class")
-            } else if (letter_.textContent == my_letters) {
-
-            } else {
-                letter_.classList.add('erro-letter')
+    for(letter_ of all_letters){ //Loop no alfabeto, verificar se contem letra
+        for(my_letter of tiped_word){
+            if(my_letter == letter_.textContent){ //Verifica a letra atual na tabela
+                for(letter_word of main_word){
+                    if(my_letter == letter_word){
+                        letter_.classList.add('have-letter')
+                    }
+                }
             }
         }
-    }*/
+    }
+
+
+    for(letter_ of all_letters){ //Loop no alfabeto, verificar se a letra ta no lugar certo
+        if(tiped_word[0] == main_word[0]){
+            if (letter_.textContent == tiped_word[0]){
+                letter_.classList.add('correct-letter')
+            }
+        } else if (tiped_word[1] == main_word[1]){
+            if (letter_.textContent == tiped_word[1]){
+                letter_.classList.add('correct-letter')
+            }
+        } else if (tiped_word[2] == main_word[2]){
+            if (letter_.textContent == tiped_word[2]){
+                letter_.classList.add('correct-letter')
+            }
+        } else if (tiped_word[3] == main_word[3]){
+            if (letter_.textContent == tiped_word[3]){
+                letter_.classList.add('correct-letter')
+            }
+        } else if (tiped_word[4] == main_word[4]){
+            if (letter_.textContent == tiped_word[4]){
+                letter_.classList.add('correct-letter')
+            }
+        } else if (tiped_word[5] == main_word[5]){
+            if (letter_.textContent == tiped_word[5]){
+                letter_.classList.add('correct-letter')
+            }
+        }
+    }
+
 }
 
 function verifyWord(){

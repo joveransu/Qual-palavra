@@ -88,16 +88,16 @@ span {
     border: 1px solid black;
 }
 
-span.correct-letter{
-    background-color: rgb(2, 248, 2);
-}
-
 span.have-letter{
     background-color: yellow;
 }
 
 span.erro-letter{
     background-color: red;
+}
+
+span.correct-letter{
+    background-color: rgb(2, 248, 2);
 }
 
 footer {
