@@ -127,18 +127,18 @@ function nextBox(elemento){
     var n = Number(id[6]) + Number(1)
     var letterConv = convertKeyCodeToLetter(event.keyCode)
     
-    /*
     if (event.keyCode == 8){ //BackSpace = Apagar
         return true
     }
 
+    /*
     if(letterConv == ' '){
         alert('ERRO: Use apenas letras.')
         elemento.value = " "
         return false
     }
     */
-
+   
     if(n < 7){
         var newFocus = 'letter' + n
     } else {
@@ -151,13 +151,13 @@ function nextBox(elemento){
     //Mudar para proxima caixa automático, verificar se não é a ultima e verificar se ja tem alguma letra escrita
     if (id != 'letter6'){
         var nextBox = document.getElementById(newFocus)
-        /*var saveLetter = nextBox.value
+        var saveLetter = nextBox.value
         nextBox.value = saveLetter
         if(saveLetter == ' ' || saveLetter.length == 0){
             nextBox.value = " "    
-        }*/
+        }
         nextBox.focus()
-    } 
+    }
 }
 
 function organizeWordsLetter(id_list, tiped_word){
