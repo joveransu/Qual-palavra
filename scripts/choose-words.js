@@ -1,5 +1,21 @@
 //Variaveis globais do game.
-var words = ['PESCAR' , 'CORRER' , 'SALTAR' , 'GANHAR' , 'PERDER']
+var words = ['PESCAR' , 'CORRER' , 'SALTAR' , 'GANHAR' , 'PERDER', 'abafar', 'abanar', 
+            'acenar' ,'acusar' ,'adoçar', 'adubar', 'afagar', 'ajudar', 'alisar',
+            'alugar', 'anotar', 'apitar', 'atacar', 'atirar', 'avisar', 'azedar',
+            'beijar', 'berrar', 'bordar', 'brotar', 'buscar', 'calçar', 'cantar',
+            'cercar', 'chamar', 'chorar', 'chutar', 'clicar', 'cortar', 'cuidar', 
+            'curvar', 'dançar', 'deitar', 'dormir', 'educar', 'entrar', 'enviar', 
+            'fatiar', 'fechar', 'formar', 'filmar', 'fritar', 'ganhar', 'gostar',
+            'gravar', 'imitar', 'inalar', 'jantar', 'lacrar', 'lamber', 'lançar',
+            'limpar', 'malhar', 'mapear', 'marcar', 'molhar', 'montar', 'morder',
+            'multar', 'nutrir', 'operar', 'partir', 'pensar', 'pintar', 'piorar',
+            'piscar', 'pousar', 'pregar', 'quicar', 'rachar', 'ranger', 'saciar',
+            'salgar', 'salvar', 'sambar', 'seguir', 'semear', 'serrar', 'servir',
+            'sobrar', 'soldar', 'sonhar', 'sorrir', 'surfar', 'tampar', 'teclar',
+            'torcer', 'tossir', 'tramar', 'tremer', 'trocar', 'varrer', 'vender',
+            'ventar', 'vestir', 'viajar', 'vigiar'           
+
+]
 
 var dict = {
     'PESCAR':'Quem pratica, gosta de mentir',
@@ -9,12 +25,17 @@ var dict = {
     'PERDER':'O importante é participar',
 }
 
-var main_word = words[Math.floor(Math.random() * words.length )]
+var main_word = words[Math.floor(Math.random() * words.length )].toLocaleUpperCase()
 
 var tip = window.document.getElementById('tip')
-tip.innerHTML = `<strong>DICA:</strong> ${dict[main_word]}.`
+tip.innerHTML = `<strong>DICA:</strong> Desativada temporariamente.`//${dict[main_word]}.`
 
 var tentativas = 1
+
+function showWord(){
+    var element = window.document.getElementById('see-word')
+    element.value = main_word
+}
 
 function convertKeyCodeToLetter(keyCode){
     var letter = ' '
@@ -106,6 +127,7 @@ function nextBox(elemento){
     var n = Number(id[6]) + Number(1)
     var letterConv = convertKeyCodeToLetter(event.keyCode)
     
+    /*
     if (event.keyCode == 8){ //BackSpace = Apagar
         return true
     }
@@ -115,6 +137,7 @@ function nextBox(elemento){
         elemento.value = " "
         return false
     }
+    */
 
     if(n < 7){
         var newFocus = 'letter' + n

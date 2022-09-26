@@ -15,19 +15,20 @@
     </header>
     <main>
         <section id="word">
-            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" data-index="1" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" data-index="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" data-index="2" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" data-index="2" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" data-index="3" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" data-index="3" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" data-index="4" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" data-index="4" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" data-index="5" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" data-index="5" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" data-index="6" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" data-index="6" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
         </section>
         <input type="button" id="check-word" value="Verificar" onclick="verifyWord()">
+        <input type="button" id="see-word" value="Ver palavra" onclick="showWord()">
         <section>
             <div>
                 <h2>Palavras Usadas:</h2>
