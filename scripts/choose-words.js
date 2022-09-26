@@ -1,12 +1,12 @@
 //Variaveis globais do game.
 var words = ['PESCAR' , 'CORRER' , 'SALTAR' , 'GANHAR' , 'PERDER', 'abafar', 'abanar', 
-            'acenar' ,'acusar' ,'adoçar', 'adubar', 'afagar', 'ajudar', 'alisar',
+            'acenar' ,'acusar' ,'adocar', 'adubar', 'afagar', 'ajudar', 'alisar',
             'alugar', 'anotar', 'apitar', 'atacar', 'atirar', 'avisar', 'azedar',
-            'beijar', 'berrar', 'bordar', 'brotar', 'buscar', 'calçar', 'cantar',
+            'beijar', 'berrar', 'bordar', 'brotar', 'buscar', 'calcar', 'cantar',
             'cercar', 'chamar', 'chorar', 'chutar', 'clicar', 'cortar', 'cuidar', 
-            'curvar', 'dançar', 'deitar', 'dormir', 'educar', 'entrar', 'enviar', 
+            'curvar', 'dancar', 'deitar', 'dormir', 'educar', 'entrar', 'enviar', 
             'fatiar', 'fechar', 'formar', 'filmar', 'fritar', 'ganhar', 'gostar',
-            'gravar', 'imitar', 'inalar', 'jantar', 'lacrar', 'lamber', 'lançar',
+            'gravar', 'imitar', 'inalar', 'jantar', 'lacrar', 'lamber', 'lancar',
             'limpar', 'malhar', 'mapear', 'marcar', 'molhar', 'montar', 'morder',
             'multar', 'nutrir', 'operar', 'partir', 'pensar', 'pintar', 'piorar',
             'piscar', 'pousar', 'pregar', 'quicar', 'rachar', 'ranger', 'saciar',
@@ -151,11 +151,11 @@ function nextBox(elemento){
     //Mudar para proxima caixa automático, verificar se não é a ultima e verificar se ja tem alguma letra escrita
     if (id != 'letter6'){
         var nextBox = document.getElementById(newFocus)
-        var saveLetter = nextBox.value
+        /*var saveLetter = nextBox.value
         nextBox.value = saveLetter
         if(saveLetter == ' ' || saveLetter.length == 0){
             nextBox.value = " "    
-        }
+        }*/
         nextBox.focus()
     } 
 }
