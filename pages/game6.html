@@ -8,35 +8,35 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/game.css">
 </head>
-<body onload="selectWord()">
+<body>
     <header>
         <h1>Qual a palavra de 6 letras?</h1>
         <p id="tip"><strong>DICA:</strong> Bla Bla Bla</p>
     </header>
     <main>
         <section id="word">
-            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" data-index="1" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" data-index="1" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" data-index="2" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" data-index="2" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" data-index="3" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" data-index="3" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" data-index="4" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" data-index="4" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" data-index="5" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" data-index="5" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" data-index="6" onclick="selectedBox(this)" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" data-index="6" onkeydown="nextBox(this)">
         </section>
-        <input type="button" id="check-word" value="Verificar">
+        <input type="button" id="check-word" value="Verificar" onclick="verifyWord()">
         <section>
             <div>
                 <h2>Palavras Usadas:</h2>
                 <ul>
-                    <li>- - - - - -</li>
-                    <li>- - - - - -</li>
-                    <li>- - - - - -</li>
-                    <li>- - - - - -</li>
-                    <li>- - - - - -</li>
+                    <li id="word1">- - - - - -</li>
+                    <li id="word2">- - - - - -</li>
+                    <li id="word3">- - - - - -</li>
+                    <li id="word4">- - - - - -</li>
+                    <li id="word5">- - - - - -</li>
                 </ul>
             </div>
         </section>

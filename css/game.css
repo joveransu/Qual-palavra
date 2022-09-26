@@ -64,6 +64,7 @@ input:hover{
     border-color: green;
     background-color: rgb(62, 160, 62);
     color: white;
+    cursor: pointer;
 }
 
 div{
