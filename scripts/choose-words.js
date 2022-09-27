@@ -1,19 +1,19 @@
 //Variaveis globais do game.
-var words = ['PESCAR' , 'CORRER' , 'SALTAR' , 'GANHAR' , 'PERDER', 'abafar', 'abanar', 
-            'acenar' ,'acusar' ,'adocar', 'adubar', 'afagar', 'ajudar', 'alisar',
-            'alugar', 'anotar', 'apitar', 'atacar', 'atirar', 'avisar', 'azedar',
-            'beijar', 'berrar', 'bordar', 'brotar', 'buscar', 'calcar', 'cantar',
-            'cercar', 'chamar', 'chorar', 'chutar', 'clicar', 'cortar', 'cuidar', 
-            'curvar', 'dancar', 'deitar', 'dormir', 'educar', 'entrar', 'enviar', 
-            'fatiar', 'fechar', 'formar', 'filmar', 'fritar', 'ganhar', 'gostar',
-            'gravar', 'imitar', 'inalar', 'jantar', 'lacrar', 'lamber', 'lancar',
-            'limpar', 'malhar', 'mapear', 'marcar', 'molhar', 'montar', 'morder',
-            'multar', 'nutrir', 'operar', 'partir', 'pensar', 'pintar', 'piorar',
-            'piscar', 'pousar', 'pregar', 'quicar', 'rachar', 'ranger', 'saciar',
-            'salgar', 'salvar', 'sambar', 'seguir', 'semear', 'serrar', 'servir',
-            'sobrar', 'soldar', 'sonhar', 'sorrir', 'surfar', 'tampar', 'teclar',
-            'torcer', 'tossir', 'tramar', 'tremer', 'trocar', 'varrer', 'vender',
-            'ventar', 'vestir', 'viajar', 'vigiar'           
+var words = ['PESCAR' , 'CORRER' , 'SALTAR', 'PERDER', 'ABAFAR', 'ABANAR', 
+            'ACENAR' ,'ACUSAR' ,'ADOCAR', 'ADUBAR', 'AFAGAR', 'AJUDAR', 'ALISTAR',
+            'ALUGAR', 'ANOTAR', 'APITAR', 'ATACAR', 'ATIRAR', 'AVISAR', 'AZEDAR',
+            'BEIJAR', 'BERRAR', 'BORDAR', 'BROTAR', 'BUSCAR', 'CALCAR', 'CANTAR',
+            'CERCAR', 'CHAMAR', 'CHORAR', 'CHUTAR', 'CLICAR', 'CORTAR', 'CUIDAR', 
+            'CURVAR', 'DANCAR', 'DEITAR', 'DORMIR', 'EDUCAR', 'ENTRAR', 'ENVIAR', 
+            'FATIAR', 'FECHAR', 'FORMAR', 'FILMAR', 'FRITAR', 'GANHAR', 'GOSTAR',
+            'GRAVAR', 'IMITAR', 'INATAR', 'JANTAR', 'LACRAR', 'LAMBER', 'LANCAR',
+            'LIMPAR', 'MALHAR', 'MAPEAR', 'MARCAR', 'MOLHAR', 'MONTAR', 'MORDER',
+            'MULTAR', 'NUTRIR', 'OPERAR', 'PARTIR', 'PENSAR', 'PINTAR', 'PIORAR',
+            'PISCAR', 'POUSAR', 'PREGAR', 'QUICAR', 'RACHAR', 'RANGER', 'SACIAR',
+            'SALGAR', 'SALVAR', 'SAMBAR', 'SEGUIR', 'SEMEAR', 'SERRAR', 'SERVIR',
+            'SOBRAR', 'SOLDAR', 'SONHAR', 'SORRIR', 'SURFAR', 'TAMPAR', 'TECLAR',
+            'TORCER', 'TOSSIR', 'TRAMAR', 'TREMER', 'TROCAR', 'VARRER', 'VENDER',
+            'VENTAR', 'VESTIR', 'VIAJAR', 'VIGIAR'           
 
 ]
 
@@ -23,19 +23,109 @@ var dict = {
     'SALTAR':'Canguru',
     'GANHAR':'Chega ser melhor que participar',
     'PERDER':'O importante é participar',
+    'ABAFAR':'Preso em lugar quente',
+    'ABANAR':'Lek', 
+    'ACENAR':'Olá sem as mãos',
+    'ACUSAR':'Alguns advogados fazem',
+    'ADOCAR':'Diabetes',
+    'ADUBAR':'Plantações',
+    'AFAGAR':'Carinho',
+    'AJUDAR':'Suporte',
+    'ALUGAR':'Imovel temporário',
+    'ANOTAR':'Não esquecer',
+    'APITAR':'Juiz de futebol',
+    'ATACAR':'A melhor defesa...',
+    'ATIRAR':'Sniper',
+    'AVISAR':'Quem avisa, amigo é',
+    'AZEDAR':'Comida estragada',
+    'BEIJAR':'Comum em relacionamentos amorosos',
+    'BERRAR':'Crianças mimadas',
+    'BORDAR':'Feito a mão',
+    'BROTAR':'Planta em crecimento',
+    'BUSCAR':'Procurar',
+    'CALCAR':'Uma peça de roupa e faz com bota',
+    'CANTAR':'Musicas',
+    'CERCAR':'Comuns em fazendas',
+    'CHAMAR':'Ligações, querer atenção, parece com fogo',
+    'CHORAR':'Todas as noites',
+    'CHUTAR':'Jogador de futebol',
+    'CLICAR':'Mouse',
+    'CORTAR':'Lenhador',
+    'CUIDAR':'Demostração de amor', 
+    'CURVAR':'Rua perigosa',
+    'DANCAR':'Uma arte',
+    'DEITAR':'Descansar',
+    'DORMIR':'Auto desligamento',
+    'EDUCAR':'Professor',
+    'ENTRAR':'Saida',
+    'ENVIAR':'Correios', 
+    'FATIAR':'Pizza',
+    'FECHAR':'Chave e cadeado',
+    'FORMAR':'Sinonimo de criação',
+    'FILMAR':'Cinema',
+    'FRITAR':'Usa óleo',
+    'GOSTAR':'Crush',
+    'GRAVAR':'Capturar muitas imagens',
+    'IMITAR':'Um cover nato',
+    'INATAR':'Que faz parte do indivíduo desde o seu nascimento',
+    'JANTAR':'Almoço',
+    'LACRAR':'Blogueirinhas fazem',
+    'LAMBER':'Picolé',
+    'LANCAR':'Arremessar',
+    'LIMPAR':'Sujo',
+    'MALHAR':'Academia',
+    'MAPEAR':'Definir lugares',
+    'MARCAR':'Deixar um selo',
+    'MOLHAR':'Jogar algum liquido',
+    'MONTAR':'Lego',
+    'MORDER':'Cachorro raivoso',
+    'MULTAR':'Trânsito',
+    'NUTRIR':'Alimentação balanceada',
+    'OPERAR':'Médicos atuam',
+    'PARTIR':'Ir a algum lugar',
+    'PENSAR':'A coisa mais rápida do mundo',
+    'PINTAR':'Pincel',
+    'PIORAR':'Se não melhora',
+    'PISCAR':'Olhos',
+    'POUSAR':'Avião',
+    'PREGAR':'Martelo',
+    'QUICAR':'Funk',
+    'RACHAR':'Abrir de meio a meio.',
+    'RANGER':'Porta velha',
+    'SACIAR':'Matar a vontade',
+    'SALGAR':'Muito salgado',
+    'SALVAR':'Não perder ao deletar',
+    'SAMBAR':'Carnaval',
+    'SEGUIR':'No instagram é bom, na rua é ruim',
+    'SEMEAR':'Preparação do solo',
+    'SERRAR':'Criação de objetos de madeiras',
+    'SERVIR':'Garçom',
+    'SOBRAR':'Resto',
+    'SOLDAR':'Colar ferro com ferro',
+    'SONHAR':'Geralmente acontece no sono, para alguns durante o dia',
+    'SORRIR':'Mostrar os dentes',
+    'SURFAR':'Praticado na praia',
+    'TAMPAR':'Anti dengue',
+    'TECLAR':'Teclado',
+    'TORCER':'Acontece muito em estádios',
+    'TOSSIR':'Geralmente quando estamos doente',
+    'TRAMAR':'Planejamento',
+    'TREMER':'Frio ou medo',
+    'TROCAR':'Mudanças são essenciais',
+    'VARRER':'Limpar com vassouras',
+    'VENDER':'Caixa eletrônico de mercados',
+    'VENTAR':'Ventilador',
+    'VESTIR':'Roupas',
+    'VIAJAR':'Longe de casa',
+    'VIGIAR':'Policial' 
 }
 
 var main_word = words[Math.floor(Math.random() * words.length )].toLocaleUpperCase()
 
 var tip = window.document.getElementById('tip')
-tip.innerHTML = `<strong>DICA:</strong> Desativada temporariamente.`//${dict[main_word]}.`
+tip.innerHTML = `<strong>DICA:</strong> ${dict[main_word]}.`
 
 var tentativas = 1
-
-function showWord(){
-    var element = window.document.getElementById('see-word')
-    element.value = main_word
-}
 
 function convertKeyCodeToLetter(keyCode){
     var letter = ' '
@@ -161,12 +251,22 @@ function nextBox(elemento){
 }
 
 function organizeWordsLetter(id_list, tiped_word){
-    var list_id = window.document.getElementById(id_list)
-    list_id.innerHTML = `${tiped_word}`
 
+    var color_word = ""
     //Detectar letras que foram usadas.
-    
     var all_letters = window.document.getElementsByClassName('alfabeto')
+
+    var index_letter
+    for(letter_ of all_letters){ //Loop no alfabeto, verificar se a letra ta no lugar certo
+        for(index_letter = 0; index_letter < 6; index_letter++){
+            if(tiped_word[index_letter] == main_word[index_letter]){
+                if (letter_.textContent == tiped_word[index_letter]){
+                    letter_.classList.remove("have-letter")
+                    letter_.classList.add('correct-letter')
+                }
+            }
+        }
+    }
 
     for(letter_ of all_letters){ //Loop no alfabeto, verificar se contem letra
         for(my_letter of tiped_word){
@@ -180,35 +280,29 @@ function organizeWordsLetter(id_list, tiped_word){
         }
     }
 
-
-    for(letter_ of all_letters){ //Loop no alfabeto, verificar se a letra ta no lugar certo
-        if(tiped_word[0] == main_word[0]){
-            if (letter_.textContent == tiped_word[0]){
-                letter_.classList.add('correct-letter')
+    for(index_letter = 0; index_letter < 6; index_letter++){
+        var control = false
+        if(tiped_word[index_letter] == main_word[index_letter]){
+            color_word += `<span class="correct-letter">${tiped_word[index_letter]}</span>`
+            control = true
+        } else {
+            for(letter_ of main_word){
+                if(letter_ == tiped_word[index_letter]){
+                    color_word += `<span class="have-letter">${tiped_word[index_letter]}</span>`
+                    control = true
+                    break
+                }
             }
-        } else if (tiped_word[1] == main_word[1]){
-            if (letter_.textContent == tiped_word[1]){
-                letter_.classList.add('correct-letter')
-            }
-        } else if (tiped_word[2] == main_word[2]){
-            if (letter_.textContent == tiped_word[2]){
-                letter_.classList.add('correct-letter')
-            }
-        } else if (tiped_word[3] == main_word[3]){
-            if (letter_.textContent == tiped_word[3]){
-                letter_.classList.add('correct-letter')
-            }
-        } else if (tiped_word[4] == main_word[4]){
-            if (letter_.textContent == tiped_word[4]){
-                letter_.classList.add('correct-letter')
-            }
-        } else if (tiped_word[5] == main_word[5]){
-            if (letter_.textContent == tiped_word[5]){
-                letter_.classList.add('correct-letter')
-            }
+        }
+        if(!control){
+            color_word += `<span>${tiped_word[index_letter]}</span>`
         }
     }
 
+
+    //Lista colorida
+    var list_id = window.document.getElementById(id_list)
+    list_id.innerHTML = `${color_word}`
 }
 
 function verifyWord(){

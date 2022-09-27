@@ -53,7 +53,7 @@ input:hover{
     font-size: 1.5em;
 }
 
-#check-word, #see-word{
+#check-word{
     display: block;
     margin: auto;
     margin-top: 25px;
