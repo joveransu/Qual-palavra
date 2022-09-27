@@ -25,7 +25,7 @@ var dict = {
     'PERDER':'O importante é participar',
     'ABAFAR':'Preso em lugar quente',
     'ABANAR':'Lek', 
-    'ACENAR':'Olá sem as mãos',
+    'ACENAR':'Olá, sem as mãos',
     'ACUSAR':'Alguns advogados fazem',
     'ADOCAR':'Diabetes',
     'ADUBAR':'Plantações',
@@ -212,46 +212,72 @@ function convertKeyCodeToLetter(keyCode){
     return letter
 }
 
-function nextBox(elemento, on=false){
+function isLetter(letra) {
+    return letra.length === 1 && letra.match(/[A-Z]/i)
+  }
+
+function nextBox(elemento, on=true){
     if(!on){
+        //Parar função, apenas testes
         return true
     }
 
-    var id = elemento.id
-    var n = Number(id[6]) + Number(1)
+    //Deixar maiusculo
+    elemento.value = elemento.value.toUpperCase()
+
+    if(isLetter(elemento.value)){
+        var id = elemento.id
+        var n = Number(id[6]) + Number(1)
+        if(n < 7){
+            //Mudar para proxima caixa automático, verificar se não é a ultima e verificar se ja tem alguma letra escrita
+            var newFocus = 'letter' + n
+            var nextBox = document.getElementById(newFocus)
+            nextBox.focus()
+        } else {
+            var newFocus = 'letter6'
+        }
+    } else {
+        elemento.value = ''
+    }
+
+    /*
     var letterConv = convertKeyCodeToLetter(event.keyCode)
     
     if (event.keyCode == 8){ //BackSpace = Apagar
         return true
     }
 
-    /*
     if(letterConv == ' '){
         alert('ERRO: Use apenas letras.')
         elemento.value = " "
         return false
     }
-    */
-   
+
+
+
+    var id = elemento.id
+    var n = Number(id[6]) + Number(1)
+    var letterConv = elemento.value
+    letterConv.toUpperCase()
+    elemento.value = letterConv
+
     if(n < 7){
         var newFocus = 'letter' + n
     } else {
         var newFocus = 'letter6'
     }
 
-
-    elemento.value = letterConv.toUpperCase()
-
     //Mudar para proxima caixa automático, verificar se não é a ultima e verificar se ja tem alguma letra escrita
     if (id != 'letter6'){
         var nextBox = document.getElementById(newFocus)
         var saveLetter = nextBox.value
-        nextBox.value = saveLetter
+        nextBox.value = saveLetter.toUpperCase()
         if(saveLetter == ' ' || saveLetter.length == 0){
-            nextBox.value = " "    
+            //nextBox.value = " "    
         }
         nextBox.focus()
     }
+    */
 }
 
 function organizeWordsLetter(id_list, tiped_word){
