@@ -120,7 +120,7 @@ var dict = {
     'VIGIAR':'Policial' 
 }
 
-var main_word = words[Math.floor(Math.random() * words.length )].toLocaleUpperCase()
+var main_word = words[Math.floor(Math.random() * words.length )].toUpperCase()
 
 var tip = window.document.getElementById('tip')
 tip.innerHTML = `<strong>DICA:</strong> ${dict[main_word]}.`
@@ -212,7 +212,11 @@ function convertKeyCodeToLetter(keyCode){
     return letter
 }
 
-function nextBox(elemento){
+function nextBox(elemento, on=false){
+    if(!on){
+        return true
+    }
+
     var id = elemento.id
     var n = Number(id[6]) + Number(1)
     var letterConv = convertKeyCodeToLetter(event.keyCode)
@@ -343,6 +347,7 @@ function verifyWord(){
     }
 
     my_word = box1 + box2 + box3 + box4 + box5 + box6
+    my_word = my_word.toUpperCase()
     console.log(`Atual: ${main_word}, Digitada: ${my_word}`)
 
     if (main_word != my_word){
