@@ -12,23 +12,25 @@
     <header>
         <h1>Qual a palavra de 6 letras?</h1>
         <p id="tip"><strong>DICA:</strong> Bla Bla Bla</p>
+
+        <!-- Provisório -->
         <p><span class="erro-letter">Estamos em desenvolvimento, use apenas letras, sem acentuações</span></p>
         <p><span class="erro-letter">e desativamos o mudar de caixa por bugs em Mobiles</span></p>
 
     </header>
     <main>
         <section id="word">
-            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" data-index="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter1" id="letter1" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" data-index="2" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter2" id="letter2" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" data-index="3" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter3" id="letter3" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" data-index="4" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter4" id="letter4" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" data-index="5" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter5" id="letter5" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
 
-            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" data-index="6" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
+            <input type="text" class="letter" name="letter6" id="letter6" required maxlength="1" minlength="1" pattern="^[A-Za-z]{1}$" onkeydown="nextBox(this)">
         </section>
         <input type="button" id="check-word" value="Verificar" onclick="verifyWord()">
         <section>

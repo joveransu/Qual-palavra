@@ -40,6 +40,11 @@ a {
     color: black;
 }
 
+main {
+    text-align: center;
+    margin: auto;
+}
+
 div {
     border: 2px solid black;
     background-color: white;
