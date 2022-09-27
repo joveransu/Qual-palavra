@@ -233,8 +233,6 @@ function nextBox(elemento, on=true){
             var newFocus = 'letter' + n
             var nextBox = document.getElementById(newFocus)
             nextBox.focus()
-        } else {
-            var newFocus = 'letter6'
         }
     } else {
         elemento.value = ''
