@@ -1,6 +1,6 @@
 //Variaveis globais do game.
 var words = ['PESCAR' , 'CORRER' , 'SALTAR', 'PERDER', 'ABAFAR', 'ABANAR', 
-            'ACENAR' ,'ACUSAR' ,'ADOCAR', 'ADUBAR', 'AFAGAR', 'AJUDAR', 'ALISTAR',
+            'ACENAR' ,'ACUSAR' ,'ADOCAR', 'ADUBAR', 'AFAGAR', 'AJUDAR',
             'ALUGAR', 'ANOTAR', 'APITAR', 'ATACAR', 'ATIRAR', 'AVISAR', 'AZEDAR',
             'BEIJAR', 'BERRAR', 'BORDAR', 'BROTAR', 'BUSCAR', 'CALCAR', 'CANTAR',
             'CERCAR', 'CHAMAR', 'CHORAR', 'CHUTAR', 'CLICAR', 'CORTAR', 'CUIDAR', 
