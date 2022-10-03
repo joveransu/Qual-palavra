@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root {
+    --color0: #202122;
+    --color1: #26303B;
+    --color2: #465A6E;
+    --color3: #83888e;
+    --color4: #AFB5BA;
+}
+
+p > a{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px 0px;
+    margin-top: 5px;
+    background-color: var(--color3);
+    color: red;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+p >a:hover{
+    border-radius: 0px 15px;
+    color: var(--color3);
+    background-color: red;
+    transition: 1s;
+}
+
+main p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+form {
+    display: block;
+    background-color: var(--color2);
+    padding: 15px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 15px;
+    border: 2px solid var(--color0);
+    border-radius: 15px;
+}
+
+label{
+    display: block;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+input, textarea{
+    padding: 5px;
+    margin: 5px;
+}
+
+sup{
+    color: red;
+}
+
+#feedback, #name{
+    background-color: var(--color4);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: none;
+}
+
+input.button{
+    font-weight: bold;
+    border-radius: 10px 0px;
+}
+
+input.button:hover{
+    cursor: pointer;
+    border-radius: 0px 10px;
+    transition: .5s;
+}
+
+input.green:hover{
+    background-color: green;
+}
+
+input.red:hover{
+    background-color: red;
+}

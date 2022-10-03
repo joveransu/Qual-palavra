@@ -237,45 +237,6 @@ function nextBox(elemento, on=true){
     } else {
         elemento.value = ''
     }
-
-    /*
-    var letterConv = convertKeyCodeToLetter(event.keyCode)
-    
-    if (event.keyCode == 8){ //BackSpace = Apagar
-        return true
-    }
-
-    if(letterConv == ' '){
-        alert('ERRO: Use apenas letras.')
-        elemento.value = " "
-        return false
-    }
-
-
-
-    var id = elemento.id
-    var n = Number(id[6]) + Number(1)
-    var letterConv = elemento.value
-    letterConv.toUpperCase()
-    elemento.value = letterConv
-
-    if(n < 7){
-        var newFocus = 'letter' + n
-    } else {
-        var newFocus = 'letter6'
-    }
-
-    //Mudar para proxima caixa automático, verificar se não é a ultima e verificar se ja tem alguma letra escrita
-    if (id != 'letter6'){
-        var nextBox = document.getElementById(newFocus)
-        var saveLetter = nextBox.value
-        nextBox.value = saveLetter.toUpperCase()
-        if(saveLetter == ' ' || saveLetter.length == 0){
-            //nextBox.value = " "    
-        }
-        nextBox.focus()
-    }
-    */
 }
 
 function organizeWordsLetter(id_list, tiped_word){

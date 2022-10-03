@@ -16,10 +16,19 @@ select {
 p > a{
     display: inline-block;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 15px 0px;
     margin-top: 5px;
     background-color: var(--color3);
     color: red;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+p >a:hover{
+    border-radius: 0px 15px;
+    color: var(--color3);
+    background-color: red;
+    transition: 1s;
 }
 
 article {

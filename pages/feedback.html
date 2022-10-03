@@ -7,9 +7,37 @@
     <title>Feed back</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/feed.css">
 </head>
 <body>
-    <h1>Desenvolvimento...</h1>
-    <p><a href="../index.html">Voltar</a></p>
+    <header>
+        <h1>Feedback</h1>
+        <p><a href="../index.html">&lArr; Voltar</a></p>
+    </header>
+    <main>
+        <p>Preencha os campos abaixo, e deixe seu FeedBack para o desenvolvedor.</p>
+        <p><strong>DICA:</strong> Nos diga como melhorar, adição de novas palavras, o que achou do game...</p>
+        <form action="" method="get" autocomplete="on">
+            <label for="name">Nome<sup>*</sup></label>
+            <input type="text" name="name" id="name" autocomplete="nickname" minlength="4" maxlength="60" placeholder="Nome (Mínimo 4 caracteres)" required>
+
+            <label for="feedback">FeedBack<sup>*</sup></label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Seu FeedBack (Mínimo 10 caracteres)" minlength="10" maxlength="250" required></textarea>
+
+            <input type="button" class="button green" value="Enviar" onclick="registerFeedBack()">
+            <input type="reset" class="button red" value="Limpar">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p>&copy; Desenvolvido por Ansu</p>
+            </li>
+            <li><a href="https://github.com/joveransu" target="_blank">&RightArrow; GitHub - @joveransu</a></li>
+            <li><a href="https://www.instagram.com/joveransu/" target="_blank">&RightArrow; Instagram - @joveransu</a></li>
+            <li><a href="https://discord.gg/UykZhAt2Vx" target="_blank">&RightArrow; Discord - Ansu#3665</a></li>
+        </ul>
+    </footer>
+    <script src="../scripts/feedbacks.js"></script>
 </body>
 </html>

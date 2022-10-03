@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+menu {
+    margin-top: 15px;
+}
+
+menu li {
+    display: inline;
+}
+
+menu a{
+    background-color: rgb(166, 164, 164);
+    border-radius: 15px 0px;
+    padding: 5px;
+    margin: 5px;
+    text-shadow: 0px 0px 0px black;
+    font-weight: bold;
+}
+
+menu a:hover{
+    background-color: black;
+    border-radius: 0px 15px;
+    color: rgb(166, 164, 164);
+    transition: .8s;
+}
