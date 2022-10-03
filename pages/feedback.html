@@ -22,11 +22,20 @@
             <input type="text" name="name" id="name" autocomplete="nickname" minlength="4" maxlength="60" placeholder="Nome (Mínimo 4 caracteres)" required>
 
             <label for="feedback">FeedBack<sup>*</sup></label>
-            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Seu FeedBack (Mínimo 10 caracteres)" minlength="10" maxlength="250" required></textarea>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Seu FeedBack (Mínimo 10 caracteres)" minlength="10" maxlength="100" required></textarea>
+
+            <p>
+                <input type="radio" name="todosver" id="mostrar" checked>Mostrar sua opinião a todos.<br>
+                <input type="radio" name="todosver" id="naomostrar"><strong>Não</strong> Mostrar sua opinião a todos.
+            </p>
 
             <input type="button" class="button green" value="Enviar" onclick="registerFeedBack()">
             <input type="reset" class="button red" value="Limpar">
         </form>
+        <section id="feeds">
+            <h2>Outros FeedBacks</h2>
+            <p>Temporários, em desenvolvimento...</p>
+        </section>
     </main>
     <footer>
         <ul>
